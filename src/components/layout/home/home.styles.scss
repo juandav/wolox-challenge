@@ -1,0 +1,54 @@
+@import "../../../assets/styles/constants.scss";
+
+.home {
+  margin-bottom: 3rem;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/Bg_Header.png");
+}
+
+.home__info {
+  font-size: 1.875rem;
+  max-width: 30rem;
+  text-align: center
+}
+
+.home__image {
+  //object-fit: scale-down;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.home__brand {
+  color: $pistachio;
+  font-weight: bold;
+}
+
+@media (min-width: $sm) {
+  .home {
+    margin-bottom: 1rem;
+  }
+
+  .home__info {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: $xl) {
+  .home {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0 5rem 0 5rem;  
+  }
+
+  .home__info {
+    text-align: unset;
+  }
+
+  .home__image {
+    margin-top: 0;
+  }
+}

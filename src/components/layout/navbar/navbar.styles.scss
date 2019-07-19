@@ -1,0 +1,96 @@
+@import "../../../assets/styles/constants.scss";
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.25rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-image: url("../../../assets/images/Bg_Header.png")
+}
+
+.nav__figure {
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-left: 0; 
+}
+
+.nav__logo {
+  width: 12rem;
+}
+
+.nav__menu {
+  display: block;
+}
+
+.nav__button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.nav__list {
+  width: 100%;
+  display: block;
+  flex-grow: 1;
+}
+
+.nav__list--hidden {
+  display: none !important;
+}
+
+.nav__list-item {
+  font-weight: $semibold;
+  color: $black;
+  padding: 0;
+  letter-spacing: 0.025em;
+  transition: $default-transition;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $grey-darker;
+  }
+}
+
+@media (min-width: $sm) {
+  .nav {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: $lg) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    flex-grow: 0;
+  }
+
+  .nav__list--inside  {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list-item {
+    margin-top: 0;
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: $xl) {
+  .nav__list-item {
+    font-size: 1.125rem;
+    padding: 0 2rem;
+  }
+}

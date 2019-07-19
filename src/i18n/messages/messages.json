@@ -1,0 +1,37 @@
+[
+  {
+    "id": "home.title",
+    "defaultMessage": "Welcome to your <b>technical interview</b> in",
+    "filepath": "src/components/layout/home/home.i18n.js"
+  },
+  {
+    "id": "home.brand",
+    "defaultMessage": "Wolox",
+    "filepath": "src/components/layout/home/home.i18n.js"
+  },
+  {
+    "id": "navbar.home",
+    "defaultMessage": "Home",
+    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "navbar.tecnology",
+    "defaultMessage": "Technologies",
+    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "navbar.benefit",
+    "defaultMessage": "Benefits",
+    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "navbar.requirement",
+    "defaultMessage": "Requirements",
+    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "tecnology.title",
+    "defaultMessage": "We are looking to incorporate incredible people for these technologies:",
+    "filepath": "src/components/layout/tecnology/tecnology.i18n.js"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "sign_in": [
+    {
+      "id": 1,
+      "first_name": "Juan David",
+      "last_name": "Echeverry Rivera",
+      "email": "e.juandav@gmail.com",
+      "age": "30",
+      "terms": true
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "sku": 512534124,
+      "name": "Optical mouse",
+      "price": 512
+    },
+    {
+      "id": 2,
+      "sku": 35252355,
+      "name": "Keyboard",
+      "price": 632
+    },
+    {
+      "id": 3,
+      "sku": 754745726,
+      "name": "Headphones",
+      "price": 7334
+    },
+    {
+      "id": 4,
+      "sku": 6327237255,
+      "name": "Microphone",
+      "price": 543
+    }
+  ]
+}
