@@ -12,7 +12,7 @@ import colors from 'assets/styles/constants.scss'
 const Benefits = props => {
   const {intl:{formatMessage, formatHTMLMessage}} = props
   return (
-    <div className="benefits">
+    <div id="benefits" className="benefits">
       <p className="benefits__title">
         <span dangerouslySetInnerHTML={{ 
           __html: formatHTMLMessage(messages.wink, {
