@@ -15,6 +15,12 @@ $yellow-dark: #f2d024;
 $yellow-lightest: #fcfbeb;
 $semibold: 600;
 
+// the :export directive is the magic sauce for webpack
+:export {
+  blue: $blue;
+  pistachio: $pistachio;
+}
+
 // Breakpoints
 $sm: 640px;
 $md: 768px;
@@ -27,3 +33,7 @@ $xl: 1280px;
 //$xl: 1080px;
 
 $default-transition: all 0.1s ease-in;
+
+.blue {
+  color: $blue;
+}

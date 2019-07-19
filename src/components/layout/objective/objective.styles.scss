@@ -1,0 +1,109 @@
+@import "../../../assets/styles/constants.scss";
+
+.objective {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.objective__followers {
+  padding: 1.5rem 2rem;
+  flex: 1 1 auto;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat center/100% url("../../../assets/images/img_woloxer.png");
+  background-color: $black;
+}
+
+.objective__info {
+  padding: 1.5rem 2rem;
+  flex: 1 1 auto;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-lighter;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.objective__count-followers {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.objective__twitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.objective__twitter-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.objective__twitter-account {
+  color: $white;
+  font-size: 1.25rem;
+}
+
+.objective__twitter-btn {
+  font-weight: $semibold;
+  display: inline-block;
+  transition: $default-transition;
+  border-radius: 9999px;
+  border: 2px solid $blue;
+  padding: 0.5rem;
+  text-align: center;
+  width: 8rem;
+  color: $white;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-pistachio {
+  color: $pistachio;
+}
+
+
+@media (min-width: $sm) {
+  .objective__info {
+    font-size: 3rem;
+  }
+
+  .objective__count-followers  {
+    font-size: 3.5rem;
+  }
+
+  .objective__twitter-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .objective__twitter-account {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: $lg) {
+  .objective {
+    margin-bottom: 4rem;
+  }
+}

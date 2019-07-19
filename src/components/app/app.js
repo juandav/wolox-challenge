@@ -3,6 +3,8 @@ import { IntlProvider, addLocaleData } from "react-intl"
 import Navbar from 'components/layout/navbar'
 import Home from 'components/layout/home'
 import Tecnology from 'components/layout/tecnology'
+import Objective from 'components/layout/objective'
+import Benefits from 'components/layout/benefits'
 import enLocaleData from "react-intl/locale-data/en"
 import esLocaleData from "react-intl/locale-data/es"
 import translations from "i18n/locales/"
@@ -20,6 +22,8 @@ export default class App extends Component {
           <Navbar />
           <Home />
           <Tecnology />
+          <Objective />
+          <Benefits />
         </Fragment>
       </IntlProvider>
     )
