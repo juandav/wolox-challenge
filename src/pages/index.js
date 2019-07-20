@@ -8,9 +8,6 @@ import Requirements from 'components/layout/requirements'
 import Farewell from 'components/layout/farewell'
 
 class IndexPage extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <>

@@ -1,14 +1,21 @@
 import React, {Component} from 'react'
+import { Field, reduxForm } from 'redux-form'
 
 class LoginPage extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
+    const { handleSubmit } = this.props
     return (
-      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="email">Email</label>
+          <Field name="email" component="input" type="email" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     )
   }
 }
 
-export default LoginPage
+export default reduxForm({
+  form: 'contact'
+})(LoginPage)

@@ -1,5 +1,8 @@
 import {combineReducers} from 'redux'
-import meta from './meta/reducer'
-import data from './articles/reducers'
+import { reducer as formReducer } from 'redux-form'
+import meta from 'store/meta/reducer'
 
-export const rootReducer = combineReducers({meta, data})
+export const rootReducer = combineReducers({
+  form: formReducer,
+  meta
+})

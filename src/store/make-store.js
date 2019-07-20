@@ -4,7 +4,7 @@ import { createEpicMiddleware } from 'redux-observable'
 import { rootEpic } from './root-epics'
 import { rootReducer } from './root-reducers'
 
-export default function initStore (initialState, { isServer }) {
+export default function initStore (initialState = {}) {
   const epicMiddleware = createEpicMiddleware()
   const logger = createLogger({ collapsed: true })
   const reduxMiddleware = applyMiddleware(epicMiddleware, logger)
