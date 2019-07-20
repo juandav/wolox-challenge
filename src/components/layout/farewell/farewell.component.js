@@ -7,7 +7,7 @@ import colors from 'assets/styles/constants.scss'
 const Farewell = props => {
   const {intl:{formatMessage, formatHTMLMessage}} = props
   return (
-    <div className="farewell">
+    <div id="farewell" className="farewell">
       <p className="farewell__title">
         <span dangerouslySetInnerHTML={{ 
           __html: formatHTMLMessage(messages.title, {

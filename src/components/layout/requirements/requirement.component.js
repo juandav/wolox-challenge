@@ -5,7 +5,7 @@ import messages from 'components/layout/requirements/requirement.i18n.js'
 const Requirements = props => {
   const {intl:{formatMessage}} = props
   return (
-    <div className="requirements">
+    <div id="requeriments" className="requirements">
       <h1 className="requirements__title">{formatMessage(messages.title)}</h1>
       <div>
         <div className="requirements__item">
