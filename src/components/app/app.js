@@ -5,6 +5,8 @@ import Home from 'components/layout/home'
 import Tecnology from 'components/layout/tecnology'
 import Objective from 'components/layout/objective'
 import Benefits from 'components/layout/benefits'
+import Requirements from 'components/layout/requirements'
+import Farewell from 'components/layout/farewell'
 import enLocaleData from "react-intl/locale-data/en"
 import esLocaleData from "react-intl/locale-data/es"
 import translations from "i18n/locales/"
@@ -24,6 +26,8 @@ export default class App extends Component {
           <Tecnology />
           <Objective />
           <Benefits />
+          <Requirements />
+          <Farewell />
         </Fragment>
       </IntlProvider>
     )

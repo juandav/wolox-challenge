@@ -1,0 +1,67 @@
+@import "../../../assets/styles/constants.scss";
+
+.farewell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.25rem;
+}
+
+.farewell__btn-more {
+  font-weight: $semibold;
+  display: inline-block;
+  transition: $default-transition;
+  border-radius: 9999px;
+  border: 2px solid $blue;
+  padding: 0.5rem;
+  text-align: center;
+  width: 8rem;
+  background-color: $blue;
+  color: $white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 8rem;
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+.farewell__footer-logo {
+  width: 6rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.farewell__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.farewell__subTitle {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+@media (min-width: $sm) {
+  .farewell {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .farewell__title {
+    font-size: 3rem;
+  }
+
+  .farewell__sub-title {
+    font-size: 2rem;
+  }
+
+  .farewell__btn-more {
+    padding: 0.75rem;
+    width: 10rem;
+  }
+}

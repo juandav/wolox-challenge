@@ -1,0 +1,76 @@
+@import "../../../assets/styles/constants.scss";
+
+.requirements {
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.requirements__title {
+  margin-bottom: 2rem;
+}
+
+.requirements__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.requirements__description {
+  max-width: 30rem;
+}
+
+.bullet-normal {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: $black;
+  margin-right: 1rem;
+}
+ 
+.bullet-pistachio {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: $black;
+  margin-right: 1rem;
+  background-color: $pistachio;
+}
+
+.bullet-blue {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: $black;
+  margin-right: 1rem;
+  background-color: $blue;
+}
+
+@media (min-width: $sm) {
+  .requirements {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: $md) {
+  .requirements__description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: $md) {
+  .requirements__title {
+    margin: 0;
+  }
+
+  .requirements__item {
+    margin: 2.5rem;
+  }
+}
