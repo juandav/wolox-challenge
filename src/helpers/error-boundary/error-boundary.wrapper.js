@@ -1,26 +1,21 @@
 import React, {Component} from 'react'
+import { connect } from "react-redux"
 import { injectIntl } from 'react-intl'
+import {setError} from 'store/meta/actions'
 import messages from 'helpers/error-boundary/error-boundary.i18n.js'
 import pandaImg from "assets/images/logo-pd.png"
 import Error404 from "assets/images/logo-pd-404.png"
 
 class ErrorBoundary extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { hasError: false }
-  }
-
-  static getDerivedStateFromError(_error) {
-    return { hasError: true }
-  }
 
   componentDidCatch(error, info) {
     console.error(error, info)
+    this.props.setError({hasError: true})
   }
 
   render() {
     const {intl:{formatMessage}} = this.props
-    if (this.state.hasError) {
+    if (this.props.hasError) {
       return (
         <div className="panda-body">
           <div className="panda-wrapper">
@@ -48,4 +43,7 @@ class ErrorBoundary extends Component {
   }
 }
 
-export default injectIntl(ErrorBoundary)
+export default connect(
+  ({meta:{hasError}}) => ({ hasError }), 
+  ({setError})
+)(injectIntl(ErrorBoundary))
