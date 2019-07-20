@@ -20,7 +20,7 @@ class ErrorBoundary extends Component {
 
   render() {
     const {intl:{formatMessage}} = this.props
-    if (!this.state.hasError) {
+    if (this.state.hasError) {
       return (
         <div className="panda-body">
           <div className="panda-wrapper">

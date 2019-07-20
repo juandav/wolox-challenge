@@ -2,7 +2,7 @@ import React from 'react'
 import { injectIntl } from 'react-intl'
 import Menuicon from 'components/shared/menu-icon'
 import WolloxLogo from 'assets/images/wolox-logo.svg'
-import messages from 'components/layout/navbar/navbar.i18n.js'
+import messages from 'components/landing/navbar/navbar.i18n.js'
 
 const visibility = " " || "nav__list--hidden"
 const Navbar = props => {

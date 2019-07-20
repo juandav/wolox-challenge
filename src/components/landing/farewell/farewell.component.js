@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
 import logo from "assets/images/wolox-black-logo.svg";
-import messages from 'components/layout/farewell/farewell.i18n.js'
+import messages from 'components/landing/farewell/farewell.i18n.js'
 import colors from 'assets/styles/constants.scss'
 
 const Farewell = props => {

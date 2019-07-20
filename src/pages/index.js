@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import Navbar from 'components/layout/navbar'
-import Home from 'components/layout/home'
-import Tecnology from 'components/layout/tecnology'
-import Objective from 'components/layout/objective'
-import Benefits from 'components/layout/benefits'
-import Requirements from 'components/layout/requirements'
-import Farewell from 'components/layout/farewell'
+import Navbar from 'components/landing/navbar'
+import Home from 'components/landing/home'
+import Tecnology from 'components/landing/tecnology'
+import Objective from 'components/landing/objective'
+import Benefits from 'components/landing/benefits'
+import Requirements from 'components/landing/requirements'
+import Farewell from 'components/landing/farewell'
 
 class IndexPage extends Component {
   render() {

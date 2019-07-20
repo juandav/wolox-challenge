@@ -1,6 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
-import messages from 'components/layout/requirements/requirement.i18n.js'
+import messages from 'components/landing/requirements/requirement.i18n.js'
 
 const Requirements = props => {
   const {intl:{formatMessage}} = props

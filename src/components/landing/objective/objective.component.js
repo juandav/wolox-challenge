@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
 import twitterIcon from "assets/images/twitter.svg"
-import messages from 'components/layout/objective/objective.i18n.js'
+import messages from 'components/landing/objective/objective.i18n.js'
 import colors from 'assets/styles/constants.scss'
 
 const Objective = props => {

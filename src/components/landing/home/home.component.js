@@ -1,6 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
-import messages from 'components/layout/home/home.i18n.js'
+import messages from 'components/landing/home/home.i18n.js'
 import peopleImg from "assets/images/Ic_ilustra_Hero.png"
 
 const Home = props => {

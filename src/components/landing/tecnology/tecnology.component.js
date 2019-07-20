@@ -1,6 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
-import messages from 'components/layout/tecnology/tecnology.i18n.js'
+import messages from 'components/landing/tecnology/tecnology.i18n.js'
 import tecnologyImg from "assets/images/Ic_Tecnologys.svg"
 
 const Tecnology = props => {

@@ -6,7 +6,7 @@ import meeting from "assets/icons/meeting.svg";
 import fruit from "assets/icons/fruit.svg";
 import laptop from "assets/icons/laptop.svg";
 import brain from "assets/icons/brain.svg";
-import messages from 'components/layout/benefits/benefits.i18n.js'
+import messages from 'components/landing/benefits/benefits.i18n.js'
 import colors from 'assets/styles/constants.scss'
 
 const Benefits = props => {
