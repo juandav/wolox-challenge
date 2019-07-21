@@ -16,6 +16,10 @@ const messages = defineMessages({
   requirement: {
     id: 'navbar.requirement',
     defaultMessage: 'Requirements'
+  },
+  buttonText: {
+    id: 'navbar.buttonText',
+    defaultMessage: 'Login'
   }
 })
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
+import { Link } from "react-router-dom"
 import Menuicon from 'components/shared/menu-icon'
 import WolloxLogo from 'assets/images/wolox-logo.svg'
 import messages from 'components/landing/navbar/navbar.i18n.js'
@@ -31,6 +32,7 @@ const Navbar = props => {
           {formatMessage(messages.requirement)}
         </a>
       </div>
+      <Link to="/login" className="nav__list-button">{formatMessage(messages.buttonText)}</Link>
     </nav>
   )
 }
