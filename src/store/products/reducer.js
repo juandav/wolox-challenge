@@ -4,7 +4,8 @@ import * as types from 'store/products/action-types'
 const INITIAL_STATE = {
   products: null,
   loading: false,
-  error: null
+  error: null,
+  searchTerm: ''
 }
 
 export default handleActions({
@@ -12,6 +13,7 @@ export default handleActions({
   [types.FETCH_PRODUCTS_ERROR]: setError,
   [types.LOADING_START]: startLoading,
   [types.LOADING_FINISH]: finishLoading,
+  [types.CHANGE_SEARCH_TERM]: changeSearchTerm
 }, INITIAL_STATE)
 
 
@@ -39,5 +41,12 @@ function finishLoading(state) {
   return {
     ...state,
     loading: false
+  }
+}
+
+function changeSearchTerm(state, {payload}) {
+  return {
+    ...state,
+    searchTerm: payload
   }
 }

@@ -6,3 +6,4 @@ export const fetchProductsSuccess = createAction(types.FETCH_PRODUCTS_SUCCESS, (
 export const fetchProductsError = createAction(types.FETCH_PRODUCTS_ERROR)
 export const loadingStart = createAction(types.LOADING_START)
 export const loadingFinished = createAction(types.LOADING_FINISH)
+export const changeSearchTerm = createAction(types.CHANGE_SEARCH_TERM)

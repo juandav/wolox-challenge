@@ -11,9 +11,10 @@ import { request } from 'universal-rxjs-ajax'
 import { of } from 'rxjs'
 import * as types from 'store/auth/action-types'
 import * as actions from 'store/auth/actions'
+import {API_URL} from 'config/constants'
 
 const getLoginOptions = body => ({
-  url: `http://localhost:3004/sign_in`,
+  url: `${API_URL}/sign_in`,
   body,
   method: "POST"
 })
