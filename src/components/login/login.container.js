@@ -118,6 +118,7 @@ let LoginForm = props => {
           </Field>
         </div>
         <button type="submit" className="login-wrapper__submit">{formatMessage(messages.submit)}</button>
+        {props.error && <span className="login-wrapper__terms">{formatMessage(messages.errorMessage)}</span>}
       </form>
     </div>
   )

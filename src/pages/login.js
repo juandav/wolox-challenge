@@ -8,19 +8,19 @@ class LoginPage extends Component {
   submit = values => {
     this.props.login(values)
   }
-  
+
   render() {
     return (
       this.props.hasToken ? (
         <Redirect to="/products"/>
       ) : (
-        <LoginForm onSubmit={this.submit} />
+        <LoginForm error={this.props.error} onSubmit={this.submit} />
       )
     )
   }
 }
 
 export default connect(
-   ({auth:{hasToken}}) => ({ hasToken }), 
+   ({auth:{hasToken, error}}) => ({ hasToken, error }), 
   ({login})
 )(LoginPage)

@@ -28,6 +28,10 @@ const messages = defineMessages({
   submit: {
     id: 'login.submit',
     defaultMessage: 'Sign in'
+  },
+  errorMessage: {
+    id: 'login.errorMessage',
+    defaultMessage: 'I can not register the user, try again'
   }
 })
 
