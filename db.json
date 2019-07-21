@@ -1,5 +1,14 @@
 {
-  "sign_in": [],
+  "sign_in": [
+    {
+      "name": "Juan",
+      "lastname": "Echeverry",
+      "email": "e.juandav@gmail.com",
+      "age": "20",
+      "terms": "true",
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,

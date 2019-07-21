@@ -9,6 +9,7 @@ import translations from "i18n/locales/"
 import { connect } from "react-redux"
 import makeStore from "store/make-store"
 import ErrorBoundary from "helpers/error-boundary"
+import PrivateRoute from "helpers/private-route"
 
 //pages
 import IndexPage from "pages/index"
@@ -27,7 +28,7 @@ let Root = props => {
           <>
             <Route exact path="/" component={IndexPage} />
             <Route path="/login" component={LoginPage} />
-            <Route path="/products" component={ProductsPage} />
+            <PrivateRoute path="/products" component={ProductsPage} />
           </>
         </Router>
       </ErrorBoundary>
