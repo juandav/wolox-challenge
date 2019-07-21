@@ -21,6 +21,6 @@ class LoginPage extends Component {
 }
 
 export default connect(
-   ({auth:{hasToken, error}}) => ({ hasToken, error }), 
+  ({auth:{hasToken, error}}) => ({ hasToken, error }), 
   ({login})
 )(LoginPage)

@@ -24,16 +24,16 @@ class ErrorBoundary extends Component {
                 <div className="panda-wrapper__idea">
                   <img src={Error404} alt="Error" />
                 </div>
-                <div class="panda-wrapper__dot"></div>
-                <div class="panda-wrapper__logo-panda">
+                <div className="panda-wrapper__dot"></div>
+                <div className="panda-wrapper__logo-panda">
                   <img src={pandaImg} alt="Pandita" />
                 </div>
               </header>
-              <h2 class="panda-wrapper__title">{formatMessage(messages.title)}</h2>
-              <p class="panda-wrapper__description">
+              <h2 className="panda-wrapper__title">{formatMessage(messages.title)}</h2>
+              <p className="panda-wrapper__description">
                 {formatMessage(messages.description)}
               </p>
-              <div class="panda-wrapper__arrow"></div>
+              <div className="panda-wrapper__arrow"></div>
             </div>
           </div>
         </div>

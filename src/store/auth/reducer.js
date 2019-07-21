@@ -2,7 +2,7 @@ import { handleActions } from 'redux-actions'
 import * as types from 'store/auth/action-types'
 
 const INITIAL_STATE = {
-  token: '',
+  token: null,
   hasToken: false,
   error: null
 }

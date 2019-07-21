@@ -1,46 +1,37 @@
 {
-  "sign_in": [
-    {
-      "name": "dad",
-      "lastname": "ad",
-      "email": "e.juandav@gmail.com",
-      "age": "10",
-      "terms": "true",
-      "id": 1
-    },
-    {
-      "name": "Juan David",
-      "lastname": "Echeverry Rivera",
-      "email": "e.juandav@gmail.com",
-      "age": "30",
-      "terms": "true",
-      "id": 2
-    }
-  ],
+  "sign_in": [],
   "products": [
     {
       "id": 1,
       "sku": 512534124,
       "name": "Optical mouse",
-      "price": 512
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit",
+      "price": 512,
+      "image_url": ""
     },
     {
       "id": 2,
       "sku": 35252355,
       "name": "Keyboard",
-      "price": 632
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit",
+      "price": 632,
+      "image_url": ""
     },
     {
       "id": 3,
       "sku": 754745726,
       "name": "Headphones",
-      "price": 7334
+      "price": 7334,
+      "imageURL": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit"
     },
     {
       "id": 4,
       "sku": 6327237255,
       "name": "Microphone",
-      "price": 543
+      "price": 543,
+      "imageURL": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit"
     }
   ]
 }
