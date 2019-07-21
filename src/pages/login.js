@@ -1,15 +1,26 @@
 import React, {Component} from 'react'
+import {connect} from "react-redux"
 import LoginForm from 'components/login/login.container'
+import {login} from 'store/auth/actions'
+import {Redirect} from 'react-router'
 
 class LoginPage extends Component {
   submit = values => {
-    console.log(values)
+    this.props.login(values)
   }
+  
   render() {
     return (
-      <LoginForm onSubmit={this.submit} />
+      this.props.hasToken ? (
+        <Redirect to="/products"/>
+      ) : (
+        <LoginForm onSubmit={this.submit} />
+      )
     )
   }
 }
 
-export default LoginPage
+export default connect(
+   ({auth:{hasToken}}) => ({ hasToken }), 
+  ({login})
+)(LoginPage)

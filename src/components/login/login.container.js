@@ -25,7 +25,6 @@ const renderSelect = ({ input, label, meta: { touched, error, warning }, childre
     <select {...input} className="login-wrapper__input">
       {children}
     </select>
-    {(() => console.log(warning))()}
     {touched && (error || warning) && <span className="danger">{error}</span>}
   </>
 )

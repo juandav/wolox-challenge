@@ -20,6 +20,10 @@ const messages = defineMessages({
   buttonText: {
     id: 'navbar.buttonText',
     defaultMessage: 'Login'
+  },
+  logedin: {
+    id: 'navbar.logedin',
+    defaultMessage: 'Get in'
   }
 })
 

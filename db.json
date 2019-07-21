@@ -1,12 +1,12 @@
 {
   "sign_in": [
     {
-      "id": 1,
-      "first_name": "Juan David",
-      "last_name": "Echeverry Rivera",
+      "name": "dad",
+      "lastname": "ad",
       "email": "e.juandav@gmail.com",
-      "age": "30",
-      "terms": true
+      "age": "10",
+      "terms": "true",
+      "id": 1
     }
   ],
   "products": [

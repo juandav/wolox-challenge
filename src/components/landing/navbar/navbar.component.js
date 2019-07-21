@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from "react-redux"
 import { injectIntl } from 'react-intl'
 import { Link } from "react-router-dom"
 import Menuicon from 'components/shared/menu-icon'
@@ -32,8 +33,12 @@ const Navbar = props => {
           {formatMessage(messages.requirement)}
         </a>
       </div>
-      <Link to="/login" className="nav__list-button">{formatMessage(messages.buttonText)}</Link>
+      <Link to="/login" className="nav__list-button">{(props.hasToken)? formatMessage(messages.logedin):formatMessage(messages.buttonText)}</Link>
     </nav>
   )
 }
-export default injectIntl(Navbar)
+
+export default connect(
+  ({auth:{hasToken}}) => ({ hasToken }), 
+ null
+)(injectIntl(Navbar))
