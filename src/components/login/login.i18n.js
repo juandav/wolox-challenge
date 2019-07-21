@@ -24,6 +24,10 @@ const messages = defineMessages({
   terms: {
     id: 'login.terms',
     defaultMessage: 'I accept the terms and conditions'
+  },
+  submit: {
+    id: 'login.submit',
+    defaultMessage: 'Sign in'
   }
 })
 
