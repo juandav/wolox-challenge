@@ -7,6 +7,14 @@
       "age": "10",
       "terms": "true",
       "id": 1
+    },
+    {
+      "name": "Juan David",
+      "lastname": "Echeverry Rivera",
+      "email": "e.juandav@gmail.com",
+      "age": "30",
+      "terms": "true",
+      "id": 2
     }
   ],
   "products": [

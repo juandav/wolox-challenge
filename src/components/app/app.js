@@ -1,5 +1,6 @@
 import React from "react"
 import { Provider } from "react-redux"
+import { PersistGate } from 'redux-persist/integration/react'
 import { IntlProvider, addLocaleData } from "react-intl"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import enLocaleData from "react-intl/locale-data/en"
@@ -38,11 +39,16 @@ Root = connect(
   null
 )(Root)
 
-const App = () => (
-  <Provider store={makeStore()}>
-    <Root />
-  </Provider>
-)
+const App = () => {
+  const {store, persistor} = makeStore()
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Root />
+      </PersistGate>
+    </Provider>
+  )
+}
 
 export default App
 
