@@ -4,6 +4,7 @@ import Bar from 'components/products/bar'
 import Search from 'components/products/search'
 import List from 'components/products/list'
 import {fetchProducts, changeSearchTerm} from 'store/products/actions'
+import Spinner from '../components/shared/spinner'
 
 class ProductsPage extends Component {
   handleToChangeSearchTerm = e => {
@@ -17,23 +18,32 @@ class ProductsPage extends Component {
       <>
         <Bar />
         <Search changeSearchTerm={this.handleToChangeSearchTerm} />
-        <List 
-          searchTerm={this.props.searchTerm} 
-          products={this.props.products} 
-        />
+        {this.props.loading? 
+          <Spinner />: 
+          <List 
+            searchTerm={this.props.searchTerm} 
+            products={this.props.products} 
+          />}
       </>
     )
   }
 }
 
 const mapStateToProps = ({ 
-  data:{products, searchTerm},
+  data:{
+    products, 
+    searchTerm,
+    loading,
+  },
 }) => ({ 
   products,
-  searchTerm
+  searchTerm,
+  loading,
 })
 
-export default connect(
+const Page = connect(
   mapStateToProps, 
   ({fetchProducts, changeSearchTerm})
 )(ProductsPage)
+
+export default Page
