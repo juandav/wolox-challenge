@@ -20,6 +20,12 @@ const Farewell = props => {
         {formatMessage(messages.knowMore)}
       </a>
       <img src={logo} alt="Wolox's logo" className="farewell__footer-logo" />
+      <div className="farewell__custom-select">
+        <select className="farewell__select" onChange={props.changeLanguage} value={props.locale}>
+          <option value="en">Ingles</option>
+          <option value="es">Español</option>
+        </select>
+      </div >
     </div>
   )
 }

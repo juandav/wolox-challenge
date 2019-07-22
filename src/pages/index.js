@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {connect} from "react-redux"
 import Navbar from 'components/landing/navbar'
 import Home from 'components/landing/home'
 import Tecnology from 'components/landing/tecnology'
@@ -6,8 +7,12 @@ import Objective from 'components/landing/objective'
 import Benefits from 'components/landing/benefits'
 import Requirements from 'components/landing/requirements'
 import Farewell from 'components/landing/farewell'
+import {changeLanguage} from 'store/meta/actions'
 
 class IndexPage extends Component {
+  changeLanguage = e => {
+    this.props.changeLanguage(e.target.value)
+  }
   render() {
     return (
       <>
@@ -17,10 +22,16 @@ class IndexPage extends Component {
         <Objective />
         <Benefits />
         <Requirements />
-        <Farewell />
+        <Farewell 
+          changeLanguage = {this.changeLanguage}
+          locale = {this.props.locale}
+        />
       </>
     )
   }
 }
 
-export default IndexPage
+export default connect( 
+  ({meta:{locale}}) => ({locale}), 
+  ({changeLanguage})
+)(IndexPage)

@@ -11,7 +11,7 @@ export default handleActions({
   [types.SET_ERROR]: setError
 }, INITIAL_STATE)
 
-function changeLanguage(state = INITIAL_STATE, {payload:{locale}}) {
+function changeLanguage(state = INITIAL_STATE, {payload:locale}) {
   return {
     ...state,
     locale,
