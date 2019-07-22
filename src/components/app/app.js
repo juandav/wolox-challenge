@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Fragment} from "react"
 import { Provider } from "react-redux"
 import { PersistGate } from 'redux-persist/integration/react'
 import { IntlProvider, addLocaleData } from "react-intl"
@@ -25,11 +25,11 @@ let Root = props => {
     <IntlProvider locale={props.locale} key={props.locale} messages={messages}>
       <ErrorBoundary>
         <Router>
-          <>
+          <Fragment>
             <Route exact path="/" component={IndexPage} />
             <Route path="/login" component={LoginPage} />
             <PrivateRoute path="/products" component={ProductsPage} />
-          </>
+          </Fragment>
         </Router>
       </ErrorBoundary>
     </IntlProvider>

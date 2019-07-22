@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import {connect} from "react-redux"
 import Navbar from 'components/landing/navbar'
 import Home from 'components/landing/home'
@@ -15,7 +15,7 @@ class IndexPage extends Component {
   }
   render() {
     return (
-      <>
+      <Fragment>
         <Navbar />
         <Home />
         <Tecnology />
@@ -26,7 +26,7 @@ class IndexPage extends Component {
           changeLanguage = {this.changeLanguage}
           locale = {this.props.locale}
         />
-      </>
+      </Fragment>
     )
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { injectIntl } from 'react-intl'
 import messages from 'components/login/login.i18n.js'
@@ -7,7 +7,7 @@ import "components/login/login.styles.scss"
 const required = value => value ? undefined : 'Required'
 
 const renderField = ({ input, label, placeholder, type, meta: { touched, error, warning } }) => (
-  <>
+  <Fragment>
     <label>{label}</label>
     <input 
       {...input} 
@@ -16,21 +16,21 @@ const renderField = ({ input, label, placeholder, type, meta: { touched, error, 
       className={type === "checkbox"? "": "login-wrapper__input"} 
     />
     {touched && ((error && <span className="danger">{error}</span>) || (warning && <span className="warning">{warning}</span>))}
-  </>
+  </Fragment>
 )
 
 const renderSelect = ({ input, label, meta: { touched, error, warning }, children }) => (
-  <>
+  <Fragment>
     <label>{label}</label>
     <select {...input} className="login-wrapper__input">
       {children}
     </select>
     {touched && (error || warning) && <span className="danger">{error}</span>}
-  </>
+  </Fragment>
 )
 
 const renderCheckbox = ({ input, label, placeholder, type, meta: { touched, error, warning }, children }) => (
-  <>
+  <Fragment>
     <input 
       {...input} 
       placeholder={placeholder} 
@@ -41,7 +41,7 @@ const renderCheckbox = ({ input, label, placeholder, type, meta: { touched, erro
       { children }
     </span>
     {touched && ((error && <span className="danger">{error}</span>) || (warning && <span className="warning">{warning}</span>))}
-  </>
+  </Fragment>
 )
 
 let LoginForm = props => {

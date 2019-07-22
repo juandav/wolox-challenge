@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
 import Bar from 'components/products/bar'
 import Search from 'components/products/search'
@@ -12,7 +12,6 @@ class ProductsPage extends Component {
     this.props.changeSearchTerm(e.target.value)
   }
   handleUnsetToken = _e => {
-    console.log('unset')
     this.props.unsetCurrentApiToken()
   }
   componentDidMount() {
@@ -20,7 +19,7 @@ class ProductsPage extends Component {
   }
   render() {
     return (
-      <>
+      <Fragment>
         <Bar unsetToken={this.handleUnsetToken}/>
         <Search changeSearchTerm={this.handleToChangeSearchTerm} />
         {this.props.loading? 
@@ -29,7 +28,7 @@ class ProductsPage extends Component {
             searchTerm={this.props.searchTerm} 
             products={this.props.products} 
           />}
-      </>
+      </Fragment>
     )
   }
 }

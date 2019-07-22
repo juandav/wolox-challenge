@@ -1,37 +1,177 @@
 [
   {
+    "id": "benefits.wink",
+    "defaultMessage": "Among the benefits we offer are found <span style=\"color: {wink};\"> ;)</span>",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.time",
+    "defaultMessage": "Time Flexibility",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.homeOffice",
+    "defaultMessage": "Home Office",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.training",
+    "defaultMessage": "Training and workshops",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.food",
+    "defaultMessage": "Snacks, fruits and drinks for free",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.remoteWeek",
+    "defaultMessage": "Remote Week",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "benefits.work",
+    "defaultMessage": "Work on the latest technologies",
+    "filepath": "src/components/landing/benefits/benefits.i18n.js"
+  },
+  {
+    "id": "farewell.title",
+    "defaultMessage": "Thanks for <span style=\"color: {byeColor};\"> completing the exercise</span>",
+    "filepath": "src/components/landing/farewell/farewell.i18n.js"
+  },
+  {
+    "id": "farewell.subTitle",
+    "defaultMessage": "We invite you to see more information",
+    "filepath": "src/components/landing/farewell/farewell.i18n.js"
+  },
+  {
+    "id": "farewell.knowMore",
+    "defaultMessage": "Learn more",
+    "filepath": "src/components/landing/farewell/farewell.i18n.js"
+  },
+  {
     "id": "home.title",
     "defaultMessage": "Welcome to your <b>technical interview</b> in",
-    "filepath": "src/components/layout/home/home.i18n.js"
+    "filepath": "src/components/landing/home/home.i18n.js"
   },
   {
     "id": "home.brand",
     "defaultMessage": "Wolox",
-    "filepath": "src/components/layout/home/home.i18n.js"
+    "filepath": "src/components/landing/home/home.i18n.js"
   },
   {
     "id": "navbar.home",
     "defaultMessage": "Home",
-    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
   },
   {
     "id": "navbar.tecnology",
     "defaultMessage": "Technologies",
-    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
   },
   {
     "id": "navbar.benefit",
     "defaultMessage": "Benefits",
-    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
   },
   {
     "id": "navbar.requirement",
     "defaultMessage": "Requirements",
-    "filepath": "src/components/layout/navbar/navbar.i18n.js"
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "navbar.buttonText",
+    "defaultMessage": "Login",
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "navbar.logedin",
+    "defaultMessage": "Get in",
+    "filepath": "src/components/landing/navbar/navbar.i18n.js"
+  },
+  {
+    "id": "objective.title",
+    "defaultMessage": "<p>We work to \n        <br/>\n        <b><span style=\"color: {convertColor};\">convert</span></b>\n        <b><span style=\"color: {ideaColor};\">ideas</span></b> into \n        <br/>products\n      </p>",
+    "filepath": "src/components/landing/objective/objective.i18n.js"
+  },
+  {
+    "id": "objective.btn",
+    "defaultMessage": "follow us",
+    "filepath": "src/components/landing/objective/objective.i18n.js"
+  },
+  {
+    "id": "requirements.title",
+    "defaultMessage": "Requirements",
+    "filepath": "src/components/landing/requirements/requirement.i18n.js"
+  },
+  {
+    "id": "requirements.item1",
+    "defaultMessage": "Advanced students or received from computer, systems or electronic careers",
+    "filepath": "src/components/landing/requirements/requirement.i18n.js"
+  },
+  {
+    "id": "requirements.item2",
+    "defaultMessage": "Intermediate / advanced English",
+    "filepath": "src/components/landing/requirements/requirement.i18n.js"
+  },
+  {
+    "id": "requirements.item3",
+    "defaultMessage": "Knowledge of agile methodologies (desirable)",
+    "filepath": "src/components/landing/requirements/requirement.i18n.js"
   },
   {
     "id": "tecnology.title",
     "defaultMessage": "We are looking to incorporate incredible people for these technologies:",
-    "filepath": "src/components/layout/tecnology/tecnology.i18n.js"
+    "filepath": "src/components/landing/tecnology/tecnology.i18n.js"
+  },
+  {
+    "id": "login.title",
+    "defaultMessage": "Sign in",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.name",
+    "defaultMessage": "Name",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.lastname",
+    "defaultMessage": "Lastname",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.email",
+    "defaultMessage": "E-mail",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.age",
+    "defaultMessage": "Age",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.terms",
+    "defaultMessage": "I accept the terms and conditions",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.submit",
+    "defaultMessage": "Sign in",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "login.errorMessage",
+    "defaultMessage": "I can not register the user, try again",
+    "filepath": "src/components/login/login.i18n.js"
+  },
+  {
+    "id": "error.title",
+    "defaultMessage": "oh, it’s gone :(",
+    "filepath": "src/helpers/error-boundary/error-boundary.i18n.js"
+  },
+  {
+    "id": "error.description",
+    "defaultMessage": "Angry Panda has eaten the page you are looking for, please try one of these instead",
+    "filepath": "src/helpers/error-boundary/error-boundary.i18n.js"
   }
 ]
