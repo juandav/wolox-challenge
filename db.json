@@ -7,7 +7,7 @@
       "name": "Optical mouse",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit",
       "price": 512,
-      "image_url": ""
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41b-6rtxnaL._AC_SR320,320_.jpg"
     },
     {
       "id": 2,
@@ -15,14 +15,14 @@
       "name": "Keyboard",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit",
       "price": 632,
-      "image_url": ""
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41OVgEoZX0L._AC_SR320,320_.jpg"
     },
     {
       "id": 3,
       "sku": 754745726,
       "name": "Headphones",
       "price": 7334,
-      "imageURL": "",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41pOmS1OUYL._AC_SR320,320_.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit"
     },
     {
@@ -30,7 +30,7 @@
       "sku": 6327237255,
       "name": "Microphone",
       "price": 543,
-      "imageURL": "",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41PSppaw1RL._AC_SR320,320_.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est purus, malesuada a lacinia a, pellentesque a elit"
     }
   ]
