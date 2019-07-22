@@ -25,7 +25,11 @@
     "test": "react-app-rewired test",
     "extract:messages": "react-intl-cra 'src/**/*.{js,jsx}' -o 'src/i18n/messages/messages.json'",
     "manage:translations": "node ./bin/translate.js",
-    "server": "json-server --watch db.json --port 3004"
+    "server": "json-server --watch db.json --port 3004",
+    "release": "standard-version",
+    "patch": "npm run release -- --release-as patch",
+    "minor": "npm run release -- --release-as minor",
+    "major": "npm run release -- --release-as major"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +47,7 @@
     "json-server": "^0.15.0",
     "node-sass": "^4.12.0",
     "react-intl-cra": "^0.3.4",
-    "react-intl-translations-manager": "^5.0.3"
+    "react-intl-translations-manager": "^5.0.3",
+    "standard-version": "^6.0.1"
   }
 }
