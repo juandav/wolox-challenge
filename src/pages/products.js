@@ -4,11 +4,16 @@ import Bar from 'components/products/bar'
 import Search from 'components/products/search'
 import List from 'components/products/list'
 import {fetchProducts, changeSearchTerm} from 'store/products/actions'
-import Spinner from '../components/shared/spinner'
+import {unsetCurrentApiToken} from 'store/auth/actions'
+import Spinner from 'components/shared/spinner'
 
 class ProductsPage extends Component {
   handleToChangeSearchTerm = e => {
     this.props.changeSearchTerm(e.target.value)
+  }
+  handleUnsetToken = _e => {
+    console.log('unset')
+    this.props.unsetCurrentApiToken()
   }
   componentDidMount() {
     this.props.fetchProducts()
@@ -16,7 +21,7 @@ class ProductsPage extends Component {
   render() {
     return (
       <>
-        <Bar />
+        <Bar unsetToken={this.handleUnsetToken}/>
         <Search changeSearchTerm={this.handleToChangeSearchTerm} />
         {this.props.loading? 
           <Spinner />: 
@@ -43,7 +48,7 @@ const mapStateToProps = ({
 
 const Page = connect(
   mapStateToProps, 
-  ({fetchProducts, changeSearchTerm})
+  ({fetchProducts, changeSearchTerm, unsetCurrentApiToken})
 )(ProductsPage)
 
 export default Page

@@ -39,6 +39,22 @@
       "age": "16",
       "terms": "true",
       "id": 5
+    },
+    {
+      "name": "ad",
+      "lastname": "da",
+      "email": "e.juandav@gmail.com",
+      "age": "16",
+      "terms": "true",
+      "id": 6
+    },
+    {
+      "name": "dad",
+      "lastname": "dad",
+      "email": "e.juandav@gmail.com",
+      "age": "15",
+      "terms": "true",
+      "id": 7
     }
   ],
   "products": [

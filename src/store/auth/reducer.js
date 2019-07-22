@@ -9,7 +9,8 @@ const INITIAL_STATE = {
 
 export default handleActions({
   [types.SET_CURRENT_API_TOKEN]: setToken,
-  [types.SET_LOGIN_ERROR]: setError
+  [types.SET_LOGIN_ERROR]: setError,
+  [types.UNSET_CURRENT_API_TOKEN]: unsetSession,
 }, INITIAL_STATE)
 
 function setToken(state = INITIAL_STATE, {payload}) {
@@ -24,5 +25,13 @@ function setError(state = INITIAL_STATE, {payload:{error}}) {
   return {
     ...state,
     error
+  }
+}
+
+function unsetSession(state= INITIAL_STATE) {
+  return {
+    ...state,
+    token: null,
+    hasToken: false
   }
 }
