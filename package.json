@@ -16,7 +16,7 @@
     "redux-form": "8.2.6",
     "redux-logger": "3.0.6",
     "redux-observable": "1.2.0",
-    "redux-persist": "5.10.0",
+    "redux-persist": "6.0.0",
     "universal-rxjs-ajax": "2.0.3"
   },
   "scripts": {
