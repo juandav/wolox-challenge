@@ -42,7 +42,7 @@
   ],
   "devDependencies": {
     "@babel/plugin-proposal-export-namespace-from": "7.7.4",
-    "babel-plugin-module-resolver": "3.2.0",
+    "babel-plugin-module-resolver": "4.0.0",
     "customize-cra": "0.9.1",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
