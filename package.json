@@ -45,7 +45,7 @@
     "babel-plugin-module-resolver": "4.0.0",
     "customize-cra": "0.9.1",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-adapter-react-16": "1.15.6",
     "json-server": "0.15.1",
     "node-sass": "4.13.0",
     "react-intl-cra": "0.3.4",
